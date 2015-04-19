@@ -1,0 +1,105 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+img{
+	border: none;
+}
+body{
+	background: #dedbd6;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #969696;
+	line-height: 1.3;
+}
+h1, h2, h3, h4, h5, h6{
+	color: #2e2c2d;
+	font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+#main{
+	max-width: 1200px;
+	min-width: 980px;
+	margin: 0 auto;
+}
+/*--------------------------------------------header*/
+#head{
+	padding: 30px 30px 80px 0;
+	overflow: hidden;
+}
+.logo{
+	float: left;
+	margin: 25px 50px 0 0;
+}
+#head h1{
+	float: left;
+	font-size: 15px;
+	color: #939393;
+	margin: 33px 0 0 0;
+}
+#head p{
+	float: right;
+	overflow: hidden;
+}
+#head p img{
+	float: left;
+	margin-left: 10px;
+}
+
+/*--------------------------------------------/header*/
+#content-wrapper{
+	background: #fff;
+}
+/*--------------------------------------------menu*/
+.menu{
+	background: #eae9e6;
+	margin-bottom: 30px;
+}
+.menu ul{
+	overflow: hidden;
+	padding: 30px;
+	list-style: none;
+	font: bold 14px 'Trebuchet MS', Arial, Helvetica, sans-serif;
+}
+.menu ul li{
+	float: left;
+	margin-right: 10px;
+}
+.menu ul li a{
+	text-decoration: none;
+	color: #413f40;
+	padding: 5px 20px;
+}
+.menu ul li a:hover{
+	text-decoration: underline;
+}
+.menu ul li.active a{
+	background: #f45300;
+	color: #fff;
+	border-radius: 5px;
+	border: 1px solid #c84502;
+}
+/*--------------------------------------------/menu*/
+.content-main{
+	padding: 0 30px;
+}
+/*--------------------------------------------slogan*/
+.slogan-main{
+	overflow: hidden;
+}
+.slogan{
+	float: left;
+	width: 33%;
+}
+.slogan div{
+	padding-right: 30px;
+}
+.slogan div h2{
+	font-size: 13px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+.slogan div h2 img{
+	float: left;
+	margin-right: 20px;
+}
+/*--------------------------------------------/slogan*/

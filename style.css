@@ -85,6 +85,7 @@ h1, h2, h3, h4, h5, h6{
 /*--------------------------------------------slogan*/
 .slogan-main{
 	overflow: hidden;
+	margin-bottom: 30px;
 }
 .slogan{
 	float: left;
@@ -103,3 +104,12 @@ h1, h2, h3, h4, h5, h6{
 	margin-right: 20px;
 }
 /*--------------------------------------------/slogan*/
+
+/*--------------------------------------------features*/
+.features{
+	margin-bottom: 30px;
+}
+.features img{
+	width: 100%;
+}
+/*--------------------------------------------/features*/

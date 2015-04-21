@@ -3,13 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Резинавая верстка</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('.menu ul');
+					menuHeight	= menu.height();
+
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+
 </head>
 <body>
 	<div id="main">
 
 		<div id="head">
-			<a href="#"><img class="logo" src="images/logo.gif" height="41" width="185" alt="APIX"></a>
+			<a href="#"><img class="logo" src="images/logo.gif" alt="APIX"></a>
 			<h1>Lorem ipsum dolor sit amet, consectetur adipisicing...</h1>
 			<p>
 				<a href="#"><img src="images/head_twitter.gif" height="15" width="21" alt="twitter"></a>
@@ -28,6 +51,7 @@
 					<li><a href="#">Shortcodes</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
+				<a href="#" id="pull">Меню</a>
 			</div> <!-- .menu -->
 
 			<div class="content-main">
@@ -60,7 +84,117 @@
 					<img src="http://lorempixel.com/900/250/city/" alt="">
 				</div> <!-- .features -->
 
+				<div class="service-main">
+					<div class="service">
+						<div>
+							<h2>Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit</h2>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+
+					<div class="service">
+						<div>
+							<h2>Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit</h2>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+
+					<div class="service">
+						<div>
+							<h2>Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit</h2>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+
+					<div class="service">
+						<div>
+							<h2>Lorem Ipsum Dolir Sit Lorem Ipsum Dolir Sit</h2>
+							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.</p>
+							<a href="#">Read more</a>
+						</div>
+					</div>
+
+				</div> <!-- .service-main -->
+
+				<div class="work-with-us">
+					<h2>Dolor sit amet, consectetur adipisicing elit, sed do elis. Lorem 
+						ipsum dolor sit amet, elit, sed do ipsum dolor... </h2>
+					<p><a href="">Want to work with us?</a></p>
+				</div> <!-- .work-with-us -->
+
+				<div class="bottom-content-block">
+					<div class="bottom-content-left">
+						<h2>CUSTOMERS TESTIMONIALS</h2>
+						<div class="review">
+							<div class="review-head">
+								<img src="http://lorempixel.com/78/78/city/" alt="">
+								<h3>John Smith</h3>
+								<p>App Designer</p>
+							</div>
+							<p class="revitw-content">“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, atis et quasi architecto beatae vitae dicta sunt explicabo atis et quasi archite.”</p>
+						</div>
+
+						<div class="review">
+							<div class="review-head">
+								<img src="http://lorempixel.com/78/78/city/" alt="">
+								<h3>John Smith</h3>
+								<p>App Designer</p>
+							</div>
+							<p class="revitw-content">“ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, atis et quasi architecto beatae vitae dicta sunt explicabo atis et quasi archite.”</p>
+						</div>
+
+					</div> <!-- .bottom-content-left -->
+
+					<div class="bottom-content-right">
+						<h2>LATEST NEWS FROM APPIX BLOG</h2>
+						<div class="news-block">
+							<a href="#"><img src="http://lorempixel.com/54/54/city/" alt=""></a>
+							<h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
+							<p>March, 28th 2011 <br/> <span>Written by Eric</span></p>
+						</div>
+
+						<div class="news-block">
+							<a href="#"><img src="http://lorempixel.com/54/54/city/" alt=""></a>
+							<h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
+							<p>March, 28th 2011 <br/> <span>Written by Eric</span></p>
+						</div>
+
+						<div class="news-block">
+							<a href="#"><img src="http://lorempixel.com/54/54/city/" alt=""></a>
+							<h3><a href="#">Lorem Ipsum Dolor Sit Amet</a></h3>
+							<p>March, 28th 2011 <br/> <span>Written by Eric</span></p>
+						</div>
+
+					</div> <!-- .bottom-content-right -->
+				</div> <!-- .bottom-content-block -->
+
 			</div> <!-- .content-main -->
+
+			<div class="footer-main">
+				<div class="footer-block-left">
+					<h3>Lorem Ipsum Dolir Sit</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <a href="#">incididunt ut labore</a> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation. Gorgeous design with time and attention dedicated to o laboris nisi ut aliquip ex ea commodo consequat. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				</div> <!-- .footer-block-left -->
+
+				<div class="footer-block-right">
+				<h3>Latest news from Appix Blog</h3>
+					<ul>
+						<li><a href="#">Sed ut perspiciatis unde omnis iste</a></li>
+						<li><a href="#">natus error sit voluptatem accusantium</a></li>
+						<li><a href="#">ipsum dolor sit amet, consectetur </a></li>
+						<li><a href="#">adipisicing elit, sed do eiusmod tempor </a></li>
+						<li><a href="#">incididunt ut labore et dolore magna</a></li>
+					</ul>
+				</div> <!-- .footer-block-right -->
+			</div> <!-- .footer-main -->
+
+			<div class="footer-copy">
+				<a href="" herf="#"><img src="images/logo-footer.gif" alt=""></a>
+				<p>&copy; 2011 Appix. All Rights Reserved. Powered by <a href="#">WordPress</a></p>
+			</div> <!-- .footer-copy -->
 
 		</div> <!-- #content-wrapper -->
 
